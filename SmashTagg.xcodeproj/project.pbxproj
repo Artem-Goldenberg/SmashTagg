@@ -12,6 +12,7 @@
 		8128192B26CBC35700A94520 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8128192926CBC35700A94520 /* Main.storyboard */; };
 		8128192D26CBC35800A94520 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8128192C26CBC35800A94520 /* Assets.xcassets */; };
 		8128193026CBC35800A94520 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8128192E26CBC35800A94520 /* LaunchScreen.storyboard */; };
+		8128193926CBC3BB00A94520 /* TwittsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8128193826CBC3BB00A94520 /* TwittsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		8128192C26CBC35800A94520 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8128192F26CBC35800A94520 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8128193126CBC35800A94520 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8128193826CBC3BB00A94520 /* TwittsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwittsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				8128192926CBC35700A94520 /* Main.storyboard */,
+				8128193826CBC3BB00A94520 /* TwittsViewController.swift */,
 				8128193726CBC38300A94520 /* Supporting files */,
 				8128193126CBC35800A94520 /* Info.plist */,
 			);
@@ -143,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8128193926CBC3BB00A94520 /* TwittsViewController.swift in Sources */,
 				8128192426CBC35700A94520 /* AppDelegate.swift in Sources */,
 				8128192626CBC35700A94520 /* SceneDelegate.swift in Sources */,
 			);
