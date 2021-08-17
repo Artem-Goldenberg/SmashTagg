@@ -13,7 +13,24 @@
 		8128192D26CBC35800A94520 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8128192C26CBC35800A94520 /* Assets.xcassets */; };
 		8128193026CBC35800A94520 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8128192E26CBC35800A94520 /* LaunchScreen.storyboard */; };
 		8128193926CBC3BB00A94520 /* TwittsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8128193826CBC3BB00A94520 /* TwittsViewController.swift */; };
+		8128194426CBD4FA00A94520 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8128194326CBD4FA00A94520 /* Twitter.framework */; };
+		8128194526CBD4FA00A94520 /* Twitter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8128194326CBD4FA00A94520 /* Twitter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8128194826CBE24C00A94520 /* TweetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8128194726CBE24C00A94520 /* TweetTableViewCell.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8128194626CBD4FB00A94520 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8128194526CBD4FA00A94520 /* Twitter.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		8128192026CBC35700A94520 /* SmashTagg.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmashTagg.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +41,8 @@
 		8128192F26CBC35800A94520 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8128193126CBC35800A94520 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8128193826CBC3BB00A94520 /* TwittsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwittsViewController.swift; sourceTree = "<group>"; };
+		8128194326CBD4FA00A94520 /* Twitter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Twitter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8128194726CBE24C00A94520 /* TweetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8128194426CBD4FA00A94520 /* Twitter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +62,7 @@
 			children = (
 				8128192226CBC35700A94520 /* SmashTagg */,
 				8128192126CBC35700A94520 /* Products */,
+				8128194226CBD4FA00A94520 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				8128192926CBC35700A94520 /* Main.storyboard */,
+				8128194726CBE24C00A94520 /* TweetTableViewCell.swift */,
 				8128193826CBC3BB00A94520 /* TwittsViewController.swift */,
 				8128193726CBC38300A94520 /* Supporting files */,
 				8128193126CBC35800A94520 /* Info.plist */,
@@ -75,6 +97,14 @@
 			path = "Supporting files";
 			sourceTree = "<group>";
 		};
+		8128194226CBD4FA00A94520 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8128194326CBD4FA00A94520 /* Twitter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -85,6 +115,7 @@
 				8128191C26CBC35700A94520 /* Sources */,
 				8128191D26CBC35700A94520 /* Frameworks */,
 				8128191E26CBC35700A94520 /* Resources */,
+				8128194626CBD4FB00A94520 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +180,7 @@
 				8128193926CBC3BB00A94520 /* TwittsViewController.swift in Sources */,
 				8128192426CBC35700A94520 /* AppDelegate.swift in Sources */,
 				8128192626CBC35700A94520 /* SceneDelegate.swift in Sources */,
+				8128194826CBE24C00A94520 /* TweetTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,8 +335,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -314,7 +348,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -331,8 +365,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -342,7 +378,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
